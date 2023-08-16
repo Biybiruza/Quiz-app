@@ -6,9 +6,12 @@ New Quiz app
 
 auth screen:
 
-<p align="left|right">
+<p align="left">
     <img src="video/img.png" alt="SR GUI opening window"
         width="300"/>
+</p>
+
+<p align="right">
     <video src="video/img_1.mp4" alt="SR GUI opening window"
         width="300"/>
 </p>
