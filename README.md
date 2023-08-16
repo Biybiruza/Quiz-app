@@ -12,7 +12,7 @@ auth screen:
 </p>
 
 <p align="right">
-    <video src="video/img_1.mp4" alt="SR GUI opening window"
+    <video src="video/img_1.png" alt="SR GUI opening window"
         width="300"/>
 </p>
 
