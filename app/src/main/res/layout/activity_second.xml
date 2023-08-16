@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_background"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice Work"
+        android:textSize="28dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check"/>
+
+    <RatingBar
+        android:id="@+id/rb_ratingAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:progressTint="#FFE55A"
+        android:numStars="5"
+        android:rating="0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Earned 80 pts"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_semi_bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/btn_style_clicked"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="44dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Next Stage"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_playAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_style_clicked"
+        android:layout_marginHorizontal="24dp"
+        android:padding="16dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/white"
+        android:text="Play Again"/>
+
+</LinearLayout>

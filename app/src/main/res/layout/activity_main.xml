@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_questionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20dp"
+            android:text="Question 1"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:cardCornerRadius="40dp"
+            android:layout_marginHorizontal="24dp">
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="what is this thing?"
+                android:textColor="#280A82"
+                android:textSize="28dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:cardCornerRadius="40dp"
+            android:layout_gravity="center|top"
+            android:backgroundTint="#FFB184">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/im_question"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/pencil"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/btn_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:button="@drawable/btn_style_clicked"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_style_clicked"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="40dp"
+            android:text="Book"/>
+
+        <RadioButton
+            android:id="@+id/btn_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:button="@drawable/btn_style_clicked"
+            android:gravity="center"
+            android:background="@drawable/btn_style_clicked"
+            android:layout_marginHorizontal="24dp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:text="Pencil"/>
+
+        <RadioButton
+            android:id="@+id/btn_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/btn_style_clicked"
+            android:gravity="center"
+            android:background="@drawable/btn_style_clicked"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:padding="16dp"
+            android:text="Pen"/>
+
+    </RadioGroup>
+
+</LinearLayout>
